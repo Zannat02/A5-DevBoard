@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    .primary-bg {
+      background-color: #F4F7FF;
+    }
+    .btn-color {
+      background-color: #3752FD;
+      color: white;
+    }
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body class="primary-bg poppins-regular">
+
+  
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Navbar -->
+    <nav class="bg-white px-6 py-4 flex items-center justify-between  my-3 rounded-lg">
+      
+      <div class="flex items-center space-x-3">
+        <img src="/assets/logo.png" alt="Logo" class="w-8 h-8">
+        <h4 class="text-4xl font-extralight">Dev<span class="font-bold">Board</span></h4>
+      </div>
+
+      
+     <button id="backToDeshBtn" class="btn-color px-4 py-2 rounded-lg text-sm hover:opacity-90">
+       Back to Desh
+    </button>
+    </nav>
+
+    
+    <div class="text-center mt-8">
+      <h2 class="text-3xl font-semibold ">Blogs</h2>
+    </div>
+
+    <!-- Blog Questions -->
+    <div class="mt-10 space-y-10 pb-16">
+
+      <!-- Question 1 -->
+      <div class="bg-white p-6 rounded-xl ">
+        <h3 class="text-xl font-semibold mb-2">Question-1: What are the different ways to select an element in the DOM?</h3>
+        <hr class="border-t border-dashed border-gray-300 mb-3">
+        <p class="text-gray-700">
+           DOM থেকে element নিতে পারি <code>getElementById</code>, <code>querySelector</code>, বা <code>getElementsByClassName</code> দিয়ে।  
+          এগুলো ব্যবহার করে HTML এর যেকোনো অংশে JavaScript দিয়ে কাজ করতে পারি।
+        </p>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="bg-white p-6 rounded-xl ">
+        <h3 class="text-xl font-semibold mb-2">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+        <hr class="border-t border-dashed border-gray-300 mb-3">
+        <p class="text-gray-700">
+          <strong>innerHTML</strong> HTML কোড সহ সব দেখায়। <br>
+          <strong>innerText</strong> শুধু দেখা যায় এমন লেখা দেয়। <br>
+          <strong>textContent</strong> সব লেখা দেখায়, এমনকি যেটা hidden সেটাও।
+        </p>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="bg-white p-6 rounded-xl ">
+        <h3 class="text-xl font-semibold mb-2">Question-3: What is event delegation in the DOM?</h3>
+        <hr class="border-t border-dashed border-gray-300 mb-3">
+        <p class="text-gray-700">
+          Event delegation মানে parent element কে event ধরার দায়িত্ব দেওয়া। এতে child গুলোর জন্য আলাদা করে event listener দিতে হয় না।
+        </p>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="bg-white p-6 rounded-xl ">
+        <h3 class="text-xl font-semibold mb-2">Question-4: What is event bubbling in the DOM?</h3>
+        <hr class="border-t border-dashed border-gray-300 mb-3">
+        <p class="text-gray-700">
+          Event bubbling হলো event নিচের element থেকে শুরু হয়ে উপরের দিকে যায়। যেমন, কোনো বাটনে ক্লিক করলে তার parent এর event ও trigger হতে পারে।
+        </p>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="bg-white p-6 rounded-xl ">
+        <h3 class="text-xl font-semibold mb-2">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+        <hr class="border-t border-dashed border-gray-300 mb-3">
+        <p class="text-gray-700">
+          JavaScript দিয়ে <code>createElement()</code> দিয়ে তৈরি করা যায়। <br>
+          <code>appendChild()</code> দিয়ে HTML এ যোগ করা হয়, আর <code>remove()</code> দিয়ে মুছে ফেলা হয়।
+        </p>
+      </div>
+
+    </div>
+  </div>
+      
+   <script src="script/redirect.js"></script>
+
+
+
+</body>
+</html>
